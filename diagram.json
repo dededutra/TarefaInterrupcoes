@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "author": "Heitor",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": 525, "left": -141.2, "attrs": {} },
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": -12.85,
+      "left": -34.85,
+      "attrs": { "builder": "pico-sdk" }
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb1",
+      "top": 205.3,
+      "left": -58.4,
+      "rotate": 180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb2",
+      "top": 205.3,
+      "left": -29.6,
+      "rotate": 180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb3",
+      "top": 205.3,
+      "left": -0.8,
+      "rotate": 180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb4",
+      "top": 205.3,
+      "left": 28,
+      "rotate": 180,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb5",
+      "top": 205.3,
+      "left": 56.8,
+      "rotate": 180,
+      "attrs": {}
+    },
+    { "type": "wokwi-neopixel", "id": "rgb6", "top": 234.1, "left": -58.4, "attrs": {} },
+    { "type": "wokwi-neopixel", "id": "rgb7", "top": 234.1, "left": -29.6, "attrs": {} },
+    { "type": "wokwi-neopixel", "id": "rgb8", "top": 234.1, "left": -0.8, "attrs": {} },
+    { "type": "wokwi-neopixel", "id": "rgb9", "top": 234.1, "left": 28, "attrs": {} },
+    { "type": "wokwi-neopixel", "id": "rgb10", "top": 234.1, "left": 56.8, "attrs": {} },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb11",
+      "top": 262.9,
+      "left": -58.4,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb12",
+      "top": 262.9,
+      "left": -29.6,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb13",
+      "top": 262.9,
+      "left": -0.8,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb14",
+      "top": 262.9,
+      "left": 28,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb15",
+      "top": 262.9,
+      "left": 56.8,
+      "rotate": 270,
+      "attrs": {}
+    },
+    { "type": "wokwi-neopixel", "id": "rgb16", "top": 291.7, "left": -58.4, "attrs": {} },
+    { "type": "wokwi-neopixel", "id": "rgb17", "top": 291.7, "left": -29.6, "attrs": {} },
+    { "type": "wokwi-neopixel", "id": "rgb18", "top": 291.7, "left": -0.8, "attrs": {} },
+    { "type": "wokwi-neopixel", "id": "rgb19", "top": 294.1, "left": 27.8, "attrs": {} },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb21",
+      "top": 320.5,
+      "left": -58.4,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb22",
+      "top": 320.5,
+      "left": -29.6,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb23",
+      "top": 320.5,
+      "left": -0.8,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb24",
+      "top": 320.5,
+      "left": 28,
+      "rotate": 270,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-neopixel",
+      "id": "rgb25",
+      "top": 320.5,
+      "left": 56.8,
+      "rotate": 270,
+      "attrs": {}
+    },
+    { "type": "wokwi-neopixel", "id": "rgb20", "top": 294.1, "left": 56.6, "attrs": {} },
+    { "type": "wokwi-membrane-keypad", "id": "keypad1", "top": -242, "left": 303.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "rgb1:DOUT", "rgb2:DIN", "blue", [ "h0" ] ],
+    [ "rgb2:DOUT", "rgb3:DIN", "blue", [ "h0" ] ],
+    [ "rgb3:DOUT", "rgb4:DIN", "blue", [ "h0" ] ],
+    [ "rgb4:DOUT", "rgb5:DIN", "blue", [ "h0" ] ],
+    [ "rgb5:DOUT", "rgb10:DIN", "blue", [ "h0" ] ],
+    [ "rgb10:DOUT", "rgb9:DIN", "blue", [ "h0" ] ],
+    [ "rgb9:DOUT", "rgb8:DIN", "blue", [ "h0" ] ],
+    [ "rgb8:DOUT", "rgb7:DIN", "blue", [ "h0" ] ],
+    [ "rgb7:DOUT", "rgb6:DIN", "blue", [ "h0" ] ],
+    [ "rgb6:DOUT", "rgb11:DIN", "blue", [ "h0" ] ],
+    [ "rgb11:DOUT", "rgb12:DIN", "blue", [ "v0" ] ],
+    [ "rgb12:DOUT", "rgb13:DIN", "blue", [ "v0" ] ],
+    [ "rgb13:DOUT", "rgb14:DIN", "blue", [ "v0" ] ],
+    [ "rgb14:DOUT", "rgb15:DIN", "blue", [ "v0" ] ],
+    [ "rgb20:DOUT", "rgb19:DIN", "blue", [ "h0" ] ],
+    [ "rgb19:DOUT", "rgb18:DIN", "blue", [ "h0" ] ],
+    [ "rgb18:DOUT", "rgb17:DIN", "blue", [ "h0" ] ],
+    [ "rgb17:DOUT", "rgb16:DIN", "blue", [ "h0" ] ],
+    [ "rgb16:DOUT", "rgb21:DIN", "blue", [ "h0" ] ],
+    [ "rgb21:DOUT", "rgb22:DIN", "blue", [ "v0" ] ],
+    [ "rgb22:DOUT", "rgb23:DIN", "blue", [ "v0" ] ],
+    [ "rgb23:DOUT", "rgb24:DIN", "blue", [ "v0" ] ],
+    [ "rgb24:DOUT", "rgb25:DIN", "blue", [ "v0" ] ],
+    [ "rgb15:DOUT", "rgb20:DIN", "blue", [ "v0" ] ],
+    [ "pico:GP7", "bb1:7t.a", "blue", [ "h0" ] ],
+    [ "bb1:7t.b", "rgb1:DIN", "blue", [ "v0" ] ],
+    [ "bb1:tn.1", "pico:GND.1", "black", [ "v0" ] ],
+    [ "bb1:5t.b", "pico:GP5", "red", [ "v-451.2", "h9.6" ] ],
+    [ "keypad1:R1", "pico:GP16", "green", [ "v0" ] ],
+    [ "keypad1:R2", "pico:GP17", "green", [ "v0" ] ],
+    [ "keypad1:R3", "pico:GP18", "green", [ "v0" ] ],
+    [ "keypad1:R4", "pico:GP19", "green", [ "v0" ] ],
+    [ "keypad1:C1", "pico:GP20", "green", [ "v0" ] ],
+    [ "keypad1:C2", "pico:GP21", "green", [ "v0" ] ],
+    [ "keypad1:C3", "pico:GP22", "green", [ "v0" ] ],
+    [ "keypad1:C4", "pico:GP26", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
